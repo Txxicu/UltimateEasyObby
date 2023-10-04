@@ -1,0 +1,17 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Ultimate Easy Obby | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Spawn", "ButtonInfo", function()
+    print("Clicked")
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29.7240582, 51.718029, -43.5362396, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+Section:NewButton("Finish", "ButtonInfo", function()
+    print("Clicked")
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-114.116409, 525.334351, 535.649719, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
